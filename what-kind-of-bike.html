@@ -1,0 +1,89 @@
+<!doctype HTML><html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "description" content = "About us">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <meta name = "author" content = "Jacob Patton">
+    <title>Wilbur Whale Bikes: About Us</title>
+
+    <link rel="icon" type="image/x-icon" href="images/wilbur-whale-bikes.ico">
+
+    <link rel = "stylesheet" href = "styles.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="images/wilbur-whale-bikes.ico" alt="Wilbur Whale Bikes" width="150" height="96">
+    <div>
+        <h1>Wilbur Whale Bike Shop</h1>
+        <p>Your Home For Anything Cycling</p>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href = 'trails.html'>Utah Trails</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a class = "active" href = 'what-kind-of-bike.html'>What Kind of Bike Do I Need?</a></li>
+        <li><a href = "basic-maintenence-and-repair.html">Basic Maintenance and Repair</a></li>
+        <li><a href = 'equipment-and-gear.html'>Equipment and Gear</a></li>
+        <li ><a href = "index.html">About Us</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>What Kind of Bike Do I Need?</h1>
+    <h3>Unsure of where to start? We're here to help. Provide us some basic information and we'll get in contact.</h3>
+    <form method = "get" action = "thanks.html">
+        <fieldset>
+            <legend>Planned Use</legend>
+
+            <p>What do you plan on using your bike for?</p>
+            <label class="checkbox"><input type="checkbox" value="mountain-biking" name="use">Mountain Biking</label>
+            <label class="checkbox"><input type="checkbox" value="daily-commute" name="use">Daily Commute</label>
+            <label class="checkbox"><input type="checkbox" value="casual-riding" name="use">Casual Street Riding</label>
+            <label class="checkbox"><input type="checkbox" value="racing" name="use">Racing</label>
+
+            <p>How often will you use your bike?</p>
+            <label for="three-plus"><input type="radio" name="per" id="three-plus" value="three-plus">3+ times per week</label>
+            <label for="one-to-three"><input type="radio" name="per" id="one-to-three" value="one-to-three">1-3 times per week</label>
+            <label for="less-than-one"><input type="radio" name="per" id="less-than-one" value="less-than-one">Less than once per week</label>
+        </fieldset>
+        <fieldset>
+            <legend>Your Price Range</legend>
+            <label for="price-range"><span>What is your price range?</span>
+                <select name="price-range" id="price-range">
+                    <option value="less-than-250">Less than $250</option>
+                    <option value="two-to-five">$250-$500</option>
+                    <option value="five-to-seven">$500-$750</option>
+                    <option value="seven-to-1000">$750-$1000</option>
+                    <option value="thousand-plus">More than $1000</option>
+                </select>
+            </label>
+            <p>Would you like to use a payment plan?</p>
+            <label for="yes"><input type="radio" id="yes" name="payment-plan" value="yes">Yes</label>
+            <label for="no"><input type="radio" id="no" name="payment-plan" value="no">No</label>
+        </fieldset>
+        <fieldset class="contact-info">
+            <legend>Your Contact Info</legend>
+            <p>Please provide at least one contact method</p>
+            <label for="name">Your Name
+                <input type="text" name="name" required>
+            </label>
+            <label for="email">Email
+                <input type="email" name="email" required>
+            </label>
+            <label for="tel">Phone Number
+                <input type="tel" name="tel" required>
+            </label>
+            <label for="comments">Comments
+                <textarea name="comments"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Get In Contact">    
+    </form>    
+</main>
+<footer>
+    <p>DGM 2120 &copy; 2021 &bull; Jacob Patton</p>
+</footer>
+</body>
+</html>
